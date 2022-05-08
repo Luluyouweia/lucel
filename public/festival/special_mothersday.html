@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CH">
+<head>
+	<meta charset="utf-8">
+	<title>Mother's Day Card</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+	<style>
+	*{
+		margin: 0;padding: 0;
+	}
+	body{
+		background-image: url("https://images.unsplash.com/photo-1526047932273-341f2a7631f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1780&q=80");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top center;
+		background-attachment: fixed;
+	}
+	
+	.title{
+		font-size: 36px;width: 60%;
+		margin: auto;margin-top: 15%;
+		text-align: center;margin-bottom: 20%;
+		padding: 30px 40px;background-color: #fff;
+		opacity: 0.8;border-radius: 5px;
+	}
+	.title:hover{transition: 1s;padding: 35px 45px;background: #eee;}
+	.title>i{ font-size: 6px;}
+	.main{padding: 6% 5%;width: 90%;
+		background: #fff;}
+	.top-bar{
+	position: fixed;left: 0;top: 0;width: 100%;height: 30px;
+	background-image: -webkit-linear-gradient(to left top,#c6ffdd,#fbd786,#f7797d);
+	background-image: linear-gradient(to left top,#c6ffdd,#fbd786,#f7797d);
+	opacity: 0.7;z-index: 2;
+	}
+		.top-bar>span{font-size: 12px;padding: 5px;color: #eee;}
+		.top-bar>span>i{color:#eee;}
+		.top-bar>span :hover{ transition: 2s; background: blue; color: #fff;}
+		
+	#msgbox{background: #fff;border: 0.5px solid #eee;position: fixed;width: 70%;top: 0;margin: 0 15%;transition: 2.5s;z-index: 5;}
+	#msgbox>h4{ padding: 6px 10px;border-bottom: 1px solid #eee;}
+	#msgbox>div{ padding: 2px 12px;}
+	#msgbox>button{ margin: 3px;float: right;background: #fff;border: 0.5px solid #eee;padding: 2px;border-radius: 3px;}
+	#msgbox>button :hover{ transition: 0.8s; border: 2px solid #99ccff;}
+	#coverScreenG{position: fixed; background: #000; top: 0;left: 0;opacity: 0.6;height: 100%;width: 100%;z-index: 4;display: none;}
+	.main>div{
+		margin: 16px 2px;
+		border: 1px solid #eee;
+		padding: 5px;
+	}
+	</style>
+	
+</head>
+
+<body>
+	<div class="top-bar">
+		<span onclick="gift()"><i class="fa fa-gift"></i>礼品</span>
+		<span onclick="money()" style="color:red;">充值</span>
+	</div>
+	<div class="title">母亲节<br>
+		<i>逯跃翔 2022/05/08 SUN</i>
+	</div>
+	<div class="main">
+	<div><i style="text-align:right;">至王丽萍</i></div>
+		<div>开通建平VIP查看更多</div>
+		<div>看<br>啥<br>呢<br>?</div>
+		<div>勺子，再撒也没了</div>
+		<div>建平科技</div>
+		<div>!!!!</div>
+		<div>版权所有，倾权必究</div>
+		<div>王丽萍有病</div>
+		<div>哈怂</div>
+		<div>够不够意思</div>
+		<div id="getGift2" onclick="msgboxOn('礼品','一个棒棒糖')">点击查看礼品</div>
+	</div>
+	
+	<div id="msgbox">
+		<h4 id="msgboxTittle">标题</h4>
+	<div id="msgboxText">
+			内容
+		</div>
+		<button onclick="msgbox.style.top='-100%';msgbox.style.opacity='0';Cover.display='none';">好的</button>
+	</div>
+	<iframe id="none" loading="lazy" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" src="https://music.163.com/outchain/player?type=2&id=28283137&auto=1&height=66"></iframe>
+	<div id="coverScreenG"></div>
+
+	<script>
+	var msgbox=document.getElementById("msgbox");
+	var Cover=document.getElementById("coverScreenG").style;
+	
+	document.getElementById("none").style.display="none";
+	
+		function msgboxOn(title,text){
+			msgTittle=document.getElementById("msgboxTittle");
+			msgText=document.getElementById("msgboxText");
+			msgTittle.innerHTML=title;
+			msgText.innerHTML=text;
+			msgbox.style.top="21%";
+			msgbox.style.opacity="1";
+			Cover.display="block";
+		}
+	msgboxOn("2022/05/08 母亲节","你好，哈怂");
+	function gift(){
+		msgboxOn("礼品","棒棒糖<br><h6>自己在桌子上拿去</h6>");
+	}
+	function money(){
+		msgboxOn("充值","充值开通建平VIP<br>特权：<br>1.查看更多内容<br>2.开通VIP")
+	}
+	</script>
+</body>
+
+</html>
