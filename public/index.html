@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CH">
+<head>
+	<meta charset="utf-8">
+	<title>鹿鼎云页</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+	<style>
+	*{
+		margin: 0;padding: 0;
+	}
+	body{
+		background-image: url("https://dogefs.s3.ladydaily.com/~/source/unsplash/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&q=80&fmt=jpg&crop=entropy&cs=tinysrgb&dl=alesia-kazantceva-VWcPlbHglYc-unsplash.jpg&w=1920");
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		background-position: top center;
+		background-attachment: fixed;
+	}
+		.title{	
+		transition: 1s;
+		width: 60%;
+		margin: auto;margin-top: 15%;
+		margin-bottom: 20%;
+		padding: 30px 40px;background-color: #fff;
+		opacity: 0.85;border-radius: 5px;
+	}
+		.title>span{
+			display: block;width: 100%;height: auto;font-size: 36px;text-align: center;
+		}
+		.title:hover{transition: 1s;padding: 50px 65px;background: #eee;}
+		.title>i{ font-size: 6px;}
+		.main{ padding: 6% 5%;width: 90%;background: rgb(255,255,255,0.85);}
+		
+	.top-bar{
+	position: fixed;left: 0;top: 0;width: 100%;height: 30px;
+	background: #2980b9; /* fallback for old browsers */ 
+	background: -webkit-linear-gradient(to bottom-left, #ffffff, #6dd5fa, #2980b9); /* Chrome 10-25, Safari 5.1-6 */ 
+	background: linear-gradient(to bottom left, #ffffff, #6dd5fa, #2980b9);
+	opacity: 0.8;z-index: 2;
+	}
+		.top-bar>span{font-size: 12px;padding: 5px;color: #eee;}
+		.top-bar>span>i{color:#eee;}
+		.top-bar>span :hover{ transition: 2s; background: blue; color: #fff;}
+		
+	#msgbox{background: #fff;border: 0.5px solid #eee;position: fixed;width: 70%;top: 0;margin: 0 15%;transition: 2s;z-index: 5;}
+	#msgbox>h4{ padding: 6px 10px;border-bottom: 1px solid #eee;}
+	#msgbox>div{ padding: 2px 12px;}
+	#msgbox>button{ margin: 3px;float: right;background: #fff;border: 0.5px solid #eee;padding: 2px;border-radius: 3px;}
+	#msgbox>button :hover{ transition: 0.8s; border: 2px solid #99ccff;}
+	#coverScreenG{margin: 0;position: fixed; border: none;background: #000; top: 0;left: 0;opacity: 0.6;height: 100%;width: 100%;z-index: 4;display: none;}
+
+	.main>div{
+		margin: 16px 2px;
+		border: 1px solid #eee;background: rgb(255,255,255,1);
+		padding: 11px;box-shadow: 10px 8px 10px #eee;
+	}
+	.introduce h3{margin: 10px;}
+
+	.main>.bar{
+		width: 45%;display: inline-block;
+	}
+	.bar:hover{
+		padding: 15px;transition: 1s;color: #0f072e;
+	}
+		.bar>ul>li{
+			margin-left: 18px;
+			list-style-type: square;
+			color: #949494;
+		}
+	img{display: inline-block;transition: 1s;}
+	
+	.bar>a{
+		margin: 15px 18px;padding: 10px 12px;background: #1980ff;display: inline-block;text-docoration: none;color: #fff;border-radius: 5px;transition: 1.2s;
+	}
+	.bar>a:hover{background: #0456a2;}
+	a{text-decoration: none;}
+	</style>
+	
+</head>
+
+<body>
+	<div class="top-bar">
+		<span onclick="gift()"><i class="fa fa-gift"></i>活动</span>
+		<span onclick="money()" style="color:red;">购买</span>
+		<span onclick="this.style.display='none';">客服</span>
+	</div>
+
+	<div class="title"><span>鹿鼎云页</span><br>
+		<i>专业前端开发，网页布局精美，产品物美价廉<br>快来体验吧！</i>
+	</div>
+
+	<div class="main">
+		<div class="bar">
+			<h3>鹿鼎云页</h3>
+			个人网页制作的首选<br>
+			<ul>
+				<li>页面精美</li>
+				<li>代码优化</li>
+				<li>高端简洁</li>
+			</ul>
+			<a href="https://docs.qq.com/form/page/DY252bm1oY3BQdmJP">联系我们</a>
+		</div>
+		<img src="https://dogefs.s3.ladydaily.com/~/source/unsplash/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&q=80&fmt=jpg&crop=entropy&cs=tinysrgb&dl=ilya-pavlov-OqtafYT5kTw-unsplash.jpg&w=1920"></img>
+	
+		<br>
+		<img src="https://dogefs.s3.ladydaily.com/~/source/unsplash/photo-1541746972996-4e0b0f43e02a?ixlib=rb-1.2.1&q=80&fmt=jpg&crop=entropy&cs=tinysrgb&dl=mario-gogh-VBLHICVh-lI-unsplash.jpg&w=1920"></img>
+		<div class="bar">
+			<h3>鹿鼎云页</h3>
+			个人网页制作的首选<br>
+			<ul>
+				<li>页面精美</li>
+				<li>代码优化</li>
+				<li>高端简洁</li>
+			</ul>
+			<a></a>
+		</div>
+	
+		<br>
+		<div class="bar">
+			<h3>经验丰富</h3>
+			多重模板，任你选择<br>
+			<ul>
+				<li>适宜手机</li>
+				<li>代码开源</li>
+				<li>内容丰富</li>
+			</ul>
+			<a></a>
+		</div>
+		<img src="https://dogefs.s3.ladydaily.com/~/source/unsplash/photo-1638913662584-731da41f5a59?ixlib=rb-1.2.1&q=80&fmt=jpg&crop=entropy&cs=tinysrgb&dl=tezos-JjjSPPzzpkU-unsplash.jpg&w=1920"></img>	
+			
+		<br>
+		<div class="bar">
+			<h3>原版加持</h3>
+			流畅的访问体验<br>
+			<ul>
+				<li>HTML+CSS+JS</li>
+				<li>Vercel</li>
+				<li>Gitee</li>
+			</ul>
+			<a></a>
+		</div>
+		<img src="https://dogefs.s3.ladydaily.com/~/source/unsplash/photo-1507297230445-ff678f10b524?ixlib=rb-1.2.1&q=80&fmt=jpg&crop=entropy&cs=tinysrgb&dl=linkedin-sales-solutions-UK1N66KUkMk-unsplash.jpg&w=1920"></img>
+		
+		<br>
+			
+		<img src="https://dogefs.s3.ladydaily.com/~/source/unsplash/photo-1521790797524-b2497295b8a0?ixlib=rb-1.2.1&q=80&fmt=jpg&crop=entropy&cs=tinysrgb&dl=cytonn-photography-vWchRczcQwM-unsplash.jpg&w=1920"></img>
+		<div class="bar">
+			<h3>放心产品</h3>
+			无时不刻的互动,人类高质量客服<br>
+			<ul>
+				<li>五星客服</li>
+				<li>线上谈论</li>
+				<li>线下交流</li>
+			</ul>
+			<a></a>
+		</div>
+
+		<div>
+		<h2>还在等什么？！</h2>
+		<span class="bar"><a></a></span>
+		</div>
+		<div class="introduce">
+			<h2>收费标准</h2>
+			<article>
+			<br><h5 style="text-align:right">——鹿鼎云页</h5>
+				暂免
+			</article>
+			<a></a>
+		</div>
+	</div>
+	
+	<div id="msgbox">
+		<h4 id="msgboxTittle">标题</h4>
+	<div id="msgboxText">内容</div>
+		<button onclick="msgbox.style.top='-100%';msgbox.style.opacity='0';Cover.display='none';">好的</button>
+	</div>
+	
+	<!-- 插件 -->
+	<iframe id="none" scrolling="no" frameborder="no" framespacing="0" allowfullscreen="true" src="https://music.163.com/outchain/player?type=2&id=28283137&auto=1&height=66"></iframe>
+	<div id="coverScreenG"></div>
+
+
+	<script>
+	var msgbox=document.getElementById("msgbox");
+	var Cover=document.getElementById("coverScreenG").style;
+	
+	document.getElementById("none").style.display="none";
+	
+		function msgboxOn(title,text){
+			msgTittle=document.getElementById("msgboxTittle");
+			msgText=document.getElementById("msgboxText");
+			msgTittle.innerHTML=title;
+			msgText.innerHTML=text;
+			msgbox.style.top="25%";
+			msgbox.style.opacity="1";
+			Cover.display="block";
+		}
+	function msgboxHide(){
+		msgbox.style.top="-50%";
+		msgbox.style.display="none";
+		setTimeout(function(){
+			msgbox.style.display="block";
+		},3000)
+	}
+	msgboxHide();
+	
+	
+	function gift(){
+		msgboxOn("礼品","暂无");
+	}
+	function money(){
+		msgboxOn("充值","建设中...")
+	}
+
+	var Image=document.getElementsByTagName("img");
+	for(var i=0;i<Image.length;i++){
+		Image[i].style.width="34%";
+		Image[i].onclick=function(){
+			this.style.width="41%";
+		}
+	}
+	
+	//var Bar=document.getElementsByClassName("bar").document.getElementsByTagName("A");
+	var Aaa=document.getElementsByTagName("a");
+	console.log(Aaa);
+	for(var n=0;n<Aaa.length;n++){
+		Aaa[n].src="";
+		Aaa[n].innerHTML="联系我们";
+		console.log("输出");
+	}
+	
+	</script>
+</body>
+
+</html>   
