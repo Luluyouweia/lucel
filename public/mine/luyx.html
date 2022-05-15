@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<head>
+    <title>鹿碌有为</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="./luyxcss.css">
+</head>
+
+<body>
+    <!-- 顶栏 -->
+    <div class="top-bar">
+        <a href="luyx.html">主页</a>
+        <a href='javascript:void(0)' onclick="$$nearBar()">菜单</a>
+    </div>
+    
+    <!-- 侧滑栏 -->
+    <div id="nearBar">
+        <ul>
+            <h2>更多</h2>
+            <h3>我的网页</h3>
+            <li><a href="https://luspecial.vercel.app">鹿鼎云页</a></li>
+            <li><a href="https://learning-lac.vercel.app/">鹿鹿教育</a></li>
+            <li><a href="https://interpart.vercel.app">我的日志</a></li>
+            <li><a href="https://learning-lac.vercel.app/in/photos.html">我的图库</a></li>
+            <br>
+
+            <h3>产品实例</h3>
+            <li><a href="https://luspecial.vercel.app/person/shanghaiheigher.html">上海精英</a></li>
+        </ul>
+    </div>
+
+    <!-- 为 侧滑栏，对话框准备的黑幕； -->
+    <div id="blackScreen"></div>
+
+    <!-- 滑动主页 -->
+    <div class="page">
+        <div>
+            <h1>鹿 碌 有 为</h1>
+            <p>个人博客</p>
+        </div>
+    </div>
+    <a id="mainPage">进入主页</a>
+    <!-- 主页 -->
+
+
+    <div id="pageIn">
+        <div class="mainBar">
+            <h1>暂无</h1>
+            后续将更新
+        </div>
+
+    </div>
+
+    <div class="footer">
+        Copyright 鹿碌有为 2022-2022© 
+    </div>
+
+<script>
+    var tarPage=document.getElementById("mainPage");
+        var nearBar=document.getElementById("nearBar");
+        var blackScreen=document.getElementById("blackScreen");
+
+    function heightToTop(ele){
+     //ele为指定跳转到该位置的DOM节点
+        let root = document.body;
+        let height = 0;
+        do{
+            height += ele.offsetTop;
+            ele = ele.offsetParent;
+        }while( ele !== root )
+            return height;
+        }
+
+    tarPage.addEventListener('click',function(e){
+        window.scrollTo({
+            top:heightToTop(e.target),
+            behavior:'smooth'
+        })
+    })
+    
+    let $Value=0;
+    function $$nearBar(){
+        if($Value==0){
+            nearBar.style.left="0";
+            blackScreen.style.display="block";
+            $Value=1;
+            console.log("In:$Value=0,now$Value="+$Value);
+            blackScreen.onclick=function(){$$nearBar();}
+        }else{
+            blackScreen.style.display="none";
+            nearBar.style.left="-60%";
+            $Value=0;
+        }
+
+    }
+
+</script>
+</body>
