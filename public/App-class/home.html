@@ -6,16 +6,25 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<title>班级云</title>
 	<link rel="stylesheet" href="./homecss.css">
+	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
 	<style>
+	*{
+		box-sizing: border-box;
+	}
 		.top-bar{
 			background-image: linear-gradient(to right ,#0080ff ,#eee);
 			height: 38px;
 		}
-		.top-bar>div{
+		.top-bar b,.top-bar div{
 			top: 0;bottom: 0;margin: auto 2px;padding: 4px 7px;color: #fff;
 		}
-		.top-bar>div>b{
+		.top-bar b{
 			font-size: 16px;
+		}
+		.top-bar button{
+			color: rgb(0,0,0,0.7);
+			float: right;width: 38px;height: 38px;
+			background: #fff;border: none;
 		}
 		#online{
 			background: #fff;
@@ -29,32 +38,170 @@
 			padding: 3px 0;border: 0.5px solid rgb(128,178,225);
 			background: #fff;
 			width: 100%;height: 40px;
-				display: flex;justify-content: space-around;
+				display: flex;justify-content: space-between;
 		}
 		.bottom-bar>*{
 			top: 0;bottom: 0;margin: auto 3px;padding: 5px;
-			transition: 0.8s;width: 20%;text-align: center;
+			transition: 0.7s;width: 40%;text-align: center;
 		}
 		.bottom-bar>*:hover{
+			background: rgb(0,0,0,0.12);
+		}
+		.conbar{
+			border-radius: 2px;
+			background: #fff;
+			margin: 8px auto;
+			width: 96%;
+			padding: 5px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.conbar>*{
+			box-sizing: border-box;
+			text-decoration: none;
+			background: #fff;
+			color: #414141;
+			padding: 12%;width: 45%;margin: 1px;
+			transition: 0.8s;
+			text-align : center;
+		}
+		.conbar>*:hover{
+			background: #eee;
+		}
+		#homeMore{
+			width: 0;height: 0;
+			background: #fff;
+			border-radius: 2px;
+			border: 1px solid #eee;position: fixed;right: 0;top: 38px;
+			z-index: 9;
+			transition: 0.8s;overflow: hidden;
+		}
+		#homeMore>*:hover{
 			background: rgb(0,0,0,0.1);
 		}
+		.msgbox{
+			left: 0;right: 0;margin: auto;max-height: 90%;overflow:vauto;
+			padding: 5px;width: 78%;position: fixed;top: -100%;
+			background: #fff;z-index: 5;border: 3px solid #eee;
+			transition: 1s;
+		}
+			.msgbox>.left{
+				background: #fff;
+				border: 2px solid rgb(0,0,0,0.4);border-radius: 5px;
+				padding: 5px;margin: 2px 4px;
+			}
+			.msgbox>.left{
+				float: left;
+			}
+			#main>iframe{
+				position: fixed;top: 39px;
+				border: none;
+				width: 100%;
+				height: 1200px;
+			}
 	</style>
 </head>
 <body>
 	<div class="top-bar">
-		<div><b>班级云</b></div>
+		<b>班级云</b><button onclick="homeMore()"><i class="fa fa-th-list"></i></button>
 	</div>
 	
 	<div style="width:100%;height:50px"></div>
 	
-	<div id="online">8.11团队-2022 独家精制团队系统</div>
-	
-	<div class="conbar">常用功能</div>
-	对不起，软件还在开发中。。。
-	
-	<div class="bottom-bar">
-		<span>首页</span><span>班级作业</span><span>班级公告</span>
+	<div id="main">
+		<div id="online">8.11团队-2022 独家精制团队系统</div>
+		<div class="conbar">常用功能</div>
+		<div class="conbar">
+			<a href="https://docs.qq.com/doc/DY2Z6VHJDT2Z3bHVk">查看作业</a>
+			<a>通知与公告</a>
+			<a>投稿</a>
+			<a href="https://learning-lac.vercel.app/in/photos.html">精选图库,轻松生活。</a>
+		</div>
 	</div>
+	
+		<div class="bottom-bar">
+			<span onclick="home()">首页</span>
+			<span onclick="newMainPage('https://docs.qq.com/doc/DY2Z6VHJDT2Z3bHVk')">班级作业</span>
+			<span>班级公告</span>
+		</div>
+	
+	<div id="homeMore">
+		<div id="aboutUsButton">关于</div>
+	</div>
+	<div class="msgbox" id="aboutUs">
+		<h3>关于</h3>
+		<div>定制班级云服务
+			<br>版权：鹿鼎云科技 LudingCloud 2022-2022©<br>8.11集团</div>
+		<button class="left" onclick="aboutUsShow()">OK啦</button>
+	</div>
+
+
+<br><br>
+	<script src="./ApkIndex.js"></script>
+	<script>
+	//————————————————APK MAIN ——————————
+	Apk(5);
+	//————————————————APK INDEX ————————————
+	var homeMoreV=0;//false
+	function homeMore(){
+		let obj=document.getElementById("homeMore");
+		if(homeMoreV==0){
+			obj.style.right="32px";
+			obj.style.top="42px";
+			obj.style.width="250px";
+			obj.style.padding="8px";
+			obj.style.height="auto";
+			homeMoreV=1;
+		}else{
+			obj.style.right="0";
+			obj.style.top="20px";
+			obj.style.width="0";
+			obj.style.padding="0";
+			obj.style.height="0";
+			homeMoreV=0;
+		}
+			setTimeout(function(){
+				obj.style.right="0";
+				obj.style.top="36px";
+				return;
+			},600)
+	}
+	for(let i=0;i<document.getElementById("homeMore").getElementsByTagName("div").length;++i){
+		document.getElementById("homeMore").getElementsByTagName("div")[i].onclick=function(){homeMore();return }
+	}
+	
+	let aboutUsV=0;
+	document.getElementById("aboutUsButton").onclick=aboutUsShow;
+	
+	function aboutUsShow(){
+		if(aboutUsV==0){
+			document.getElementById("aboutUs").style.top="100px";
+			homeMore();
+			return aboutUsV=1;
+		}else{
+			document.getElementById("aboutUs").style.top="-120%";
+			return aboutUsV=0;
+		}
+	}
+	let $home=document.getElementById("main").innerHTML;	
+	function newMainPage(url){
+		console.log("主页面切换至：",url)
+		document.getElementById("main").innerHTML="<iframe src='"+url+" 'border='none'></iframe>";
+		console.log(document.getElementById("main").innerHTML);
+		return url;
+	}
+	function home(){
+		document.getElementById("main").innerHTML=$home;
+	}
+	
+	
+	</script>
+	
+	
+	
+	
 </body>
 </html>
 
+    
