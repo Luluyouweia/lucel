@@ -35,15 +35,18 @@
 		
 		.bottom-bar{
 			position: fixed;bottom: 0;
-			padding: 3px 0;border: 0.5px solid rgb(128,178,225);
+			padding: 2.5px 0;border: 0.5px solid rgb(128,178,225);
 			background: #fff;
-			width: 100%;height: 40px;
+			width: 100%;height: 50px;
 				display: flex;justify-content: space-between;
 		}
 		.bottom-bar>*{
 			top: 0;bottom: 0;margin: auto 3px;padding: 5px;
-			transition: 0.7s;width: 40%;text-align: center;
+			transition: 0.7s;width: 40%;text-align: center;font-size: 5px;
 		}
+			.bottom-bar i{
+				display: block;font-size: 15px;
+			}
 		.bottom-bar>*:hover{
 			background: rgb(0,0,0,0.12);
 		}
@@ -57,6 +60,9 @@
 			flex-wrap: wrap;
 			justify-content: center;
 		}
+			.con>span{
+				background: rgb(0,0,0,0.03);color: #23234f;
+			}
 		.conbar>*{
 			box-sizing: border-box;
 			text-decoration: none;
@@ -67,7 +73,7 @@
 			text-align : center;
 		}
 		.conbar>*:hover{
-			background: #eee;
+			background: #eee;width: 47%;
 		}
 		#homeMore{
 			width: 0;height: 0;
@@ -78,7 +84,7 @@
 			transition: 0.8s;overflow: hidden;
 		}
 		#homeMore>*:hover{
-			background: rgb(0,0,0,0.1);
+			background: rgb(0,0,0,0.03);
 		}
 		.msgbox{
 			left: 0;right: 0;margin: auto;max-height: 90%;overflow:vauto;
@@ -100,6 +106,9 @@
 				width: 100%;
 				height: 1200px;
 			}
+			.conbar>span>i{
+				display: block;font-size: 50px;color: #2e9afe;
+			}
 	</style>
 </head>
 <body>
@@ -112,18 +121,27 @@
 	<div id="main">
 		<div id="online">8.11团队-2022 独家精制团队系统</div>
 		<div class="conbar">常用功能</div>
-		<div class="conbar">
-			<a href="https://docs.qq.com/doc/DY2Z6VHJDT2Z3bHVk">查看作业</a>
+		<div class="con conbar">
+			<span onclick="window.open('https://docs.qq.com/doc/DY2Z6VHJDT2Z3bHVk')">
+				<i class="fa fa-book"></i>查看作业
+			</span>
+			
 			<a>通知与公告</a>
 			<a>投稿</a>
-			<a href="https://learning-lac.vercel.app/in/photos.html">精选图库,轻松生活。</a>
+			<span onclick="window.open('https://learning-lac.vercel.app/in/photos.html')">
+				<i class="fa fa-image"></i>精选图库<br>轻松生活
+			</span>
+			<span onclick="askForStudy()">卷。。。</span>
+			<span>接入广告</span>
 		</div>
+		
 	</div>
 	
 		<div class="bottom-bar">
-			<span onclick="home()">首页</span>
-			<span onclick="newMainPage('https://docs.qq.com/doc/DY2Z6VHJDT2Z3bHVk')">班级作业</span>
-			<span>班级公告</span>
+			<span onclick="home()"><i class="fa fa-home"></i>首页</span>
+			<span><i class="fa fa-object-group"></i>文学资讯</span>
+			<span onclick="newMainPage('https://docs.qq.com/doc/DY2Z6VHJDT2Z3bHVk')"><i class="fa fa-pencil-square-o"></i>班级作业</span>
+			<span><i class="fa fa-bell-o"></i>班级公告</span>
 		</div>
 	
 	<div id="homeMore">
@@ -135,7 +153,11 @@
 			<br>版权：鹿鼎云科技 LudingCloud 2022-2022©<br>8.11集团</div>
 		<button class="left" onclick="aboutUsShow()">OK啦</button>
 	</div>
-
+	<div class="msgbox" id="askForStudy">
+		<h3>卷毛线啊</h3>
+		<div>一天就知道卷卷卷,<br>| ू•ૅ㉨•́)ᵎᵎᵎ 哼！被我发现了！[狗头]</div>
+		<button class="left" onclick="document.getElementById('askForStudy').style.top='-100%';">噢。。。</button>
+	</div>
 
 <br><br>
 	<script src="./ApkIndex.js"></script>
@@ -195,6 +217,9 @@
 		document.getElementById("main").innerHTML=$home;
 	}
 	
+	function askForStudy(){
+		document.getElementById("askForStudy").style.top="20%";
+	}
 	
 	</script>
 	
