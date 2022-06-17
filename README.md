@@ -10,6 +10,12 @@ Deploy your own Vue.js project with Vercel.
 
 _Live Example: https://vue-template.vercel.app_
 
+[主页直链](http://luspecial.vercel.app)
+
+[班级云直链](http://luspecial.vercel.app/App-class/home.html)
+
+[家庭云智联](http://luspecial.vercel.app/family/family.html)
+
 ## Running Locally
 
 ```
