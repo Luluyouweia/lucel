@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>璐维搜索</title>
+	<style>
+	*{
+		margin: 0;padding: 0;
+		box-sizing: border-box;
+	}
+		html,body{
+			height: 100%;
+		}
+		#backgroundImage{
+			background-color: #eee;
+			background-image: url("./background.jpg");
+			background-size: cover;
+			background-position: center center;
+			filter: blur(0px);
+			top: 0;left: 0;width: 100%;height: 100%;
+			z-index: -5;position: fixed;
+			transition: 2s;
+		}
+		#topBar{
+			position: fixed;display: flex;justify-content: space-between;
+			background-image: linear-gradient( to bottom,rgb(225,225,255,0.35),rgb(255,255,255,0.15));
+			width: 100%;height: 25px;
+			z-index: 5;text-align: center;
+		}
+		#topBar>*{
+			display: inline-block;
+			color: #fff;
+			text-align: center;
+			font-size: 11px;
+			width: 15%;height: 25px;
+			transition: 0.5s;
+			line-height: 175%;
+		}
+		
+		#topBar>*:hover{
+			background-color: rgb(255,255,255,0.3);
+		}
+		#topBar>section{
+			width: 22%;font-size: 12px;
+		}
+		#search{
+			width: 80%;height: 50px;
+			border: 1px solid #eee;
+			border-radius: 8px;
+			padding: 8px 9px;
+		}
+		
+		#searchBox,#BGC{
+			text-align: center;margin: 64px auto;
+		}
+		#searchBox input[type="submit"],#BGC input[type="button"]{
+			color: #fff;margin: 0;
+			width: 75px;height: 50px;
+			border: 1px solid #eee;border-radius: 6px;
+			background-color: #1a82e2;
+			transition: 0.5s;
+		}
+		#searhBox input[type="submit"]:hover,#BGC input[type="button"]:hover{
+			background-color: #9ce;
+		}
+		#index{
+			position: fixed;top: 25px;
+			width: 100%;height: 100%;border: none;
+			display: none;
+		}
+		#fBar{
+			margin: 50px 0;padding: 12px 15px;
+			background: rgb(255,255,255,0.5);
+		}
+			#fBar>*{
+				margin: 1px 7px; padding: 2px 4px;
+			}
+			#fBar>a{
+				text-decoration: none;color: #414141;transition: 0.1s;border: 0px solid #9cf;border-radius: 5px;
+			}
+				#fBar>a:hover{
+					color: #000;text-decoration: underline;
+				}
+		.fixed{
+			position: fixed;
+		}
+		.hidden{
+			display: none;
+		}
+		.box{
+			width: 86%;height: auto;left: 0;right: 0;margin: auto;
+			padding: 5px 5px;
+			border: 2px solid #eee;border-radius: 5px;
+			background: #fff;
+		}	
+			
+		.toolText{
+			color: rgb(0,0,0,0.6);margin: 10px 5px 3px;font-size: 16px;
+		}
+		#bgChangeBar{
+			padding: 5px;top: 28%;
+		}
+		.back{
+			float: right;
+		}
+			.back:hover{
+				color: #414141;opacity: 0.7;
+			}
+				#bgExampleIn span{
+					display: inline-block;width: 25px; height: 25px;margin: 5px;text-align: center;
+					color: #fff;background: #9cf;
+				}
+	</style>
+</head>
+<body>
+	<div id="topBar">
+		<section><b><i>Luvel璐维</i></b></section>
+		<div id="background" onclick="changeBg()">壁纸</div>
+		<div id="picture">图库</div>
+		<div id="user">用户</div>
+		<div id="setting">设置</div>
+		<div id="about">关于</div>
+	</div>
+	<div id="backgroundImage"></div><div style="height: 30px;width: 100%;"></div>
+	
+	<form id="searchBox" name="searchBox" action="javascript:void(0)">
+		<input id="search" type="text" value="璐维科技"></input>
+		<input type="submit" value="搜索" onclick="searchInput()"></input>
+	</form>
+	
+	<div id="fBar">
+		<div class="toolText">常用</div>
+		<a href="https://www.runoob.com/">Runoob</a>
+		<a href="https://bilibili.com/">Bilibili</a>
+		<a href="https://unsplash.com/">Unsplash图库</a>
+		<a href="https://www.bing.com/">必应</a>
+		<a href="https://learning-lac.vercel.app/in/photos.html">云端逍遥</a>
+	</div>
+	
+	<section id="bgChangeBar" class="hidden fixed box"><div class="back" onclick="changeBgBack()">╳</div>
+		壁纸更换
+		<form id="BGC">
+			<input id="inputedBgUrl" type="text" value="URL"></input>
+			<input value="确认" type="button" onclick="bgChangeOn()"></input>
+		</form>
+		<button onclick="$('inputedBgUrl').value='./pictures/test1.jpg';bgChangeOn();changeBgBack()">随机</button>
+		<div id="bgExampleIn"></div>	
+	</section>
+	
+	
+	<script>
+		function $(id){return document.getElementById(id);}
+		function websitePage(text){
+			window.open("https://m.baidu.com/s?from=1001192y&word="+text+"& -advertisement");
+			return text;
+		}
+		
+		function searchInput(){
+			let getText =$("search").value;
+			return websitePage(getText);
+		}
+		
+		$("search").onmouseover=()=>{
+			$("backgroundImage").style.filter="blur(1.3px)";
+		}
+		$("search").onmouseout=()=>{
+			$("backgroundImage").style.filter="blur(0px)";
+		}
+		
+		function changeBg(){
+			$("bgChangeBar").style.display="block";
+			return 0;
+		}
+		function changeBgBack(){
+			$("bgChangeBar").style.display="none";
+			return 0;
+		}
+		
+		function bgChangeOn(){
+			try{
+				let clone=$("backgroundImage").style.backgroundImage;
+				$("backgroundImage").style.backgroundImage="url('"+$("inputedBgUrl").value+"')";
+			}catch(err){
+				$("backgroundImage").style.backgroundImage=clone;
+			}
+			return;
+		}
+		var bgPicture=new Array();
+		bgPicture[0]="https://img1.baidu.com/it/u=3865729823,2306290124&fm=253&fmt=auto&app=120&f=JPEG?w=752&h=1000";
+			for(let i=0;i<bgPicture.length;++i){
+			$("bgExampleIn").innerHTML+="<span onclick='bgExampleId("+i+")'>"+(i+1)+"</span>";
+		}
+		
+			function bgExampleId(id){
+				$("backgroundImage").style.backgroundImage="url('"+bgPicture[id]+"')";
+			}
+	</script>
+</body>
+</html>
+
+    
