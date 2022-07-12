@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<style>
+*{
+	margin: 0;padding: 0;box-sizing: border-box;color : #202020;
+}
+html,body{
+	height: 100vh;background: #fff;
+}
+.content{
+	background: rgb(244,244,244);border: 2px solid #eee;border-radius: 8px;
+	padding: 12px;width: 94%;margin: 9px auto;left: 0;right: 0;
+}
+.top-bar{
+	border-bottom: 2px solid #eee;position: fixed;
+	top: 0;left: 0;width: 100vw;height: 48px;
+	display: flex;justify-content: space-around;
+	z-index: 9;background: #fff;
+}
+	.top-bar *{
+		margin: 6px auto;
+	}
+.content-bar ,.content-bar img{
+	width: 95vw;margin: 7px  auto;
+	border-radius: 5px;z-index: 1;
+	position: relative;transition: 0.45s;
+}
+.content-bar>.text{
+	position: absolute;top: 35%;z-index: 2;
+	width: 90vw;text-align: center;font-size: 8.5vw;
+}
+.content-bar:hover{
+	opacity: 0.8;color: #eee;
+}
+	.white,.white *{
+		color: #fff;
+	}
+.big{
+	font-size: 6vw;
+}
+.c-text{
+	text-align: center;
+}
+.bt{
+	outline: none;/*长按后的轮廓*/
+	padding: 3vw 4vw;border-radius: 31px;border: 1px solid #eee;
+	transition: 0.4s;
+	margin: 5px auto;background: #fff;
+	font-size: 3vw;
+}
+.blue-bg{
+	background: #08f;color: #fff;border: 1px solid #08f;
+}
+#readDoc:hover,#bottomDon:hover{
+	background: #fff;color: #08f;
+}
+.blue-bd{
+	color: #08f;background: #fff;
+}
+.space{
+	display: flex;justify-content: space-around;padding: 2vh 5vw;
+}
+
+.footer{
+	background: rgb(244,244,244);
+	color: rgb(0,0,0,0.5);
+	padding: 3vh 2.5vw;
+	width: 100%;font-size: 11px;
+bottom: 0;
+}
+.float-model-box{
+	position: fixed;top: 0;bottom: 0;left: 0;right: 0;margin: auto;
+	width: 75vw;height: 72vh;padding: 18px;border: 1px solid #eee;border-radius: 28px;
+	z-index: 11;background: #fff;overflow: auto;box-shadow: 2px 2px 2px rgb(0,0,0,0.6);
+}
+.float-model-box>img{
+	width: 70vw;margin: auto;
+}
+.float-img{
+	display: block;width: 45vw;margin: auto;
+}
+.c-l-r{
+	display: inline-block;position: absolute;
+	width: auto;left: 0;right: 0;margin: auto;
+}
+#thanks{
+	margin-top: 12vh;
+	border-top: 1.5px solid #eee;
+}
+#thanks *{
+	margin: 10vh auto;color: #414141;
+}
+#thanks h3{
+	margin-top: 0;
+	margin-bottom: 13vh auto;
+}
+.f-green{
+	color: #2ca204;
+}
+#sp>.f-green:before,#sp>.f-green:after{
+	content: "―――";
+	font-size: 2vw;
+	color: rgb(0,0,0,0.1);
+}
+#thanks section .float-img{
+	width: 35vw;margin: auto;
+}
+#thanks .space{
+	column-count: 3;column-gap: 1px;
+	column-rule-style: solid;column-rule-color: #eee;
+}
+
+#thanks .space *{
+	padding: 3px 2px;margin: 3px 2px;
+}
+.text{
+	margin: 1vh 2vw;color: rgb(122,122,122);
+}
+#sp>p{
+	margin-bottom: 8vh;
+}
+.near-bar{
+	width: 50vw;height: 100vh;
+	background: #fff;
+	border-right: 1px solid #eee;
+	position: fixed;top: 48px;
+	left: -60vw;z-index: 9;
+	transition: 0.8s;
+	padding-bottom: 48px;
+}
+ul,li{list-style-type: none;}
+.black-screen{
+	position: fixed;
+	top: 0;left: 0;display: block;
+	width: 100vw;height: 100vh;background: rgb(0,0,0,0.3);
+	z-index: 5;
+}
+.line{
+	display: block;width: 100vw;height: 0;margin: 6vh 0;
+	border-top: 1px solid #eee;
+}
+.show-bar{
+	display: inline-block;overflow: auto;
+	width: 30vw;height: 25vh;padding: 12px;border: 1px solid #eee;
+	border-radius: 2px;margin: 2vh 3vw;box-shadow: 2px 2px 2px rgb(102,102,102);
+}
+.float-little-bar{
+	width: auto;height: 30vh;overflow: auto;
+}
+	</style>
+</head>
+
+<body>
+	<div class="top-bar">
+		<span id="more" style="position:fixed;top: 0;left: 15px;">≡</span>
+		<b>建平家庭好地方</b>
+	</div>
+	
+	<div class="near-bar">
+		<h4 class="c-text">家庭好地方</h4>
+		侧滑栏
+	</div>
+	<div style="height: 5vh;"></div>
+	<div class="content-bar">
+		<div class="text white"><b>家庭好地方</b></div>
+		<img src="./square-bgi.png" alt="图片加载失败"></img>
+	</div>
+	<p class="c-text" style="font-size: 8.5vw;"><b>建平之家</b></p>
+	<div class="big c-text" style="margin-bottom: 2vh;">一间独立温馨的中等偏上收入家庭的独立研发软件</div>
+	<section class="space">
+		<button id="readDoc" class="bt blue-bg" onclick="download()">Android端下载</button>
+		<button id="helpUs" class="bt blue-bg blue-bd" onclick="helpUs()">支持我们</button>
+		<button class="bt blue-bg blue-bd">阅读资讯</button>
+	</section>
+	
+	<div class="content" style="margin: 10vh auto 18vh;"><h2>建平家庭好地方</h2>
+		版本: 0.0.1
+	</div>
+	<section id="sp">
+		<div class="big c-text f-green">免费</div>
+		<p class="text c-text space">建平好家庭地方研发团队自成立以来，一直坚持创新、开放、共享的原则，以家庭成员的支持作为动力，努力创造更好，致力于满足家庭成员的一切需求</p>
+		
+		<div class="big c-text f-green">新兴</div>
+		<p class="text c-text space">功能齐全，有着丰富的前人之鉴，更优秀、更完美</h3>
+
+		<div class="big c-text f-green">轻量</div>
+		<p class="text c-text space">软件以Android App为基础架构，Web App为核心架构，占用运行内存低，寥寥体积，解决的却不是寥寥问题</p>
+		
+		<div class="big c-text f-green">灵活</div>
+		<p class="text c-text space">灵活的不只功能</p>
+		
+		<div class="big c-text f-green">流畅</div>
+		<p class="text c-text space">高级UI设计与完整的网页解析过程，让您的体验更上一层楼！</p>
+		
+	</section>
+	
+<div class="line"></div>
+<section class="content-bar">
+	<div class="c-text big" style="color: #08f">他们都在用家庭好地方！</div>
+		<div class="float-little-bar">
+		<div class="show-bar"><h4>逯跃翔</h4><span class="text">家庭积极建设分子,软件开发者<br>“明天会更好”</span></div>
+		<div class="show-bar"><h4>王丽萍</h4><span class="text">“很有用的一款软件，方便办公”</span></div>
+		<div class="show-bar">王“星星”</h4><span class="text">“哇塞！”</span></div>
+	</div>
+	<button class="space c-text bt blue-bg" id="bottomDon" onclick="download()">Android端下载</button>
+</section>
+
+	<section id="thanks">
+		<h2 class="c-text">特别鸣谢</h2>
+		<img class="float-img" src="https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/240dcf714f83b131cb8553ba31fb15745abdd80a664dac3f244be7f160ab4fec5f620edc8f442b55e4ef4b088f9123aa?pictype=scale&from=30111&version=3.3.3.3&uin=1208197626&fname=.archvercel-logotype-dark.png&size=1024"/>
+		<img class="float-img" src="https://docs.gtimg.com/home/img/header/logo-29e249.svg"/>
+		<section class="space">
+			<img class="float-img" alt="GitHub" src="https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/2bd591c23ed4290c713e91cd83cdae759b6d59f92c5a5beec5188f522127565001ca98de5045c7587e6797d0f5999759?pictype=scale&from=30111&version=3.3.3.3&uin=1208197626&fname=GH.png&size=1024">
+			<img class="float-img" alt="Unsplash" src="https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/1cc63f82af19ad83dc3166795c332b84b53defa620584027c83f742f5ad2f5d3e46cb7ce2913554bc1d36629cdc90fea?pictype=scale&from=30113&version=3.3.3.3&uin=1208197626&fname=Screenshot_20220711_130415.jpg&size=1024"/>
+		</section>
+		<h3 class="c-text" style="color: #08f">介绍</h3>
+		<section class="space">
+			<div><h4>Vercel</h4>优质的静态网站托管服务</div>
+			<div><h4>腾讯文档</h4>提供多种同步文档服务</div>
+			<div><h4>GitHub</h4>优异的开源代码托管网站</div>
+			<div><h4>Unsplash</h4>图片素材库</div>
+		</section>
+	</section>
+	
+	<p class="text c-text" style="font-size: 1vw">建平家庭工信部</p>
+	<section class="footer">
+	Language: CN<br>
+	<a href="#">主页</a>
+	<a href="#">返回顶部</a>
+	<a href="#">访问电脑版</a>
+	<a href="javascript:void(0)"onclick="helpUs()">赞助</a>
+	<a href="#">关于</a>
+	<a href="#">合作</a>
+	<a href="#">联系我们</a>
+	<br>
+		<h5 class="c-text">Lucel.js</h5>
+		Copyright: Lucel.js©2022-2022 <br>
+		鹿鼎云中国&Lucel.js支持运行 Vercel托管 
+	</section>
+	<script>
+		var get=(ele)=>{
+			if(ele[0]=="#") {
+				return document.querySelectorAll(ele)[0];}
+			else{
+				return document.querySelectorAll(ele);
+			}
+		}		
+	var helpUsBox=document.createElement("div");
+		helpUsBox.className="float-model-box";
+		helpUsBox.innerHTML="<h2>支持我们</h2><img src='./giveHelpForUs.png'/><br><button class='bt blue-bg c-text c-l-r' onclick='removeHelpUs();blackScreen()'>关闭</button>"
+		var helpUsBoxText=document.createTextNode("");
+		helpUsBox.appendChild(helpUsBoxText);
+		var element=get("body")[0]; 
+	var helpUs=()=>{
+		element.appendChild(helpUsBox);
+		blackScreen();
+		BS_bool--;
+	}
+	var removeHelpUs=()=>{
+		element.removeChild(helpUsBox);
+		blackScreen();
+	}
+		setTimeout(()=>{
+			if(BS_bool==0)helpUs();
+		},8000)
+	
+	var BS_bool=0;
+			var bg=document.createElement("div");
+			bg.className="black-screen";
+			var text=document.createTextNode("");
+		bg.appendChild(text);
+			var ele=get("body")[0];
+	var blackScreen=()=>{
+		if(BS_bool==0){
+			ele.appendChild(bg);
+			BS_bool++;//申明模态开启
+		}else{
+			ele.removeChild(bg);
+			BS_bool--;//申明关闭
+		}
+	}
+	
+	var NB_bool=0;
+	get("#more").onclick=()=>{
+		if(NB_bool==0){
+			get(".near-bar")[0].style.left="0";
+			blackScreen();
+			NB_bool++;
+		}else{
+			get(".near-bar")[0].style.left="-60vw";
+			blackScreen();
+			NB_bool--;
+		}
+	}
+	
+	var download=()=>{
+		window.open("https://luspecial.vercel.app/family/file/app.apk");
+	}
+	</script>
+	<script>
+//Lucel.js────────────────
+	var $=(ele)=>{if(document.querySelectorAll(ele)[0].toString[0]=='#') {return document.querySelectorAll(ele)[0];}else{return document.querySelectorAll(ele);}}
+	var Luc={
+		data:()=>{},
+		active:()=>{}
+	}
+	</script>
+</body>
+</html>
+
+    
