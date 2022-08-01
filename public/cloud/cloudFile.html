@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>路客云资源</title>
+    <style>
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;font-weight: 300;color: rgb(12,12,12);
+        }
+        .body,html{
+            height: 100vh;
+        }
+        .top-bar{
+            height: 50px;width: 100vw;position: fixed;
+            margin: 0;padding: 8px;display: block;
+            background-color: #fff;border-bottom: 1px solid #eee;
+        }
+        .top-bar>#TITTLE{
+            position: absolute;
+            font-weight: 200;font-size: 18px;display: inline-block;
+            width: 23.5vw;padding: 9px;height: 100%;text-align: center;
+        }
+        .top-bar>section{
+            position: absolute; 
+            display: flex;justify-content: space-around;width: 76.5vw;right: 0;
+        }
+        .top-bar>section>*{
+            display: inline-block;padding: 9px;transition: 0.2s;
+        }
+        .top-bar>section>*:hover,.top-bar>div:hover{
+            color: #9cf;cursor: pointer;
+        } 
+    </style>
+</head>
+
+<body>
+    <div class="top-bar">
+        <div id="TITTLE">路客云资源</div>
+        <section>
+            <span>首页</span>
+            <span>文档</span>
+            <span>视频</span>
+            <span>外链</span>
+        </section>
+    </div>
+
+    <script>
+        var $=(ele)=>{
+            if(document.querySelectorAll(ele)[0][0]=='#'){
+                return document.querySelectorAll(ele)[0];
+            }
+            return document.querySelectorAll(ele);
+        }
+
+        for(let i=0;i<4;++i){
+             $(".top-bar")[0].querySelectorAll("section")[0].querySelectorAll("span")[i].onclick=()=>{
+                for(let v=0;v<4;++v){
+                    $(".top-bar")[0].querySelectorAll("section")[0].querySelectorAll("span")[v].style.color="rgb(12,12,12)"
+                }
+                $(".top-bar")[0].querySelectorAll("section")[0].querySelectorAll("span")[i].style.color="#08f";
+            }
+        }
+    
+    </script>
+
+</body>
