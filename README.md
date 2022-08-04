@@ -1,4 +1,4 @@
-# Vue.js
+# 欢迎
 
 This directory is a brief example of a [Vue.js](https://vuejs.org/) app that can be deployed to Vercel with zero configuration.
 
@@ -15,6 +15,7 @@ _Live Example: https://vue-template.vercel.app_
 [班级云直链](http://luspecial.vercel.app/App-class/home.html)
 
 [家庭云智联](http://luspecial.vercel.app/family/family.html)
+[鹿客音乐](http://luspecial.vercel.app/music/index.html)
 
 ## Running Locally
 
