@@ -50,3 +50,11 @@
 			text:"国庆70周年庆典背景音乐之一，国创",
 			id:"1394369908",
 			img: "https://gimg3.baidu.com/search/src=https%3A%2F%2Fbkimg.cdn.bcebos.com%2Fsmart%2F3ac79f3df8dcd100baa1876012c15010b912c8fc8112-bkimg-process%2Cv_1%2Crw_1%2Crh_1%2Cmaxl_300%2Cpad_1&refer=http%3A%2F%2Fwww.baidu.com&app=2021&size=w348&n=0&g=0n&er=404&q=75&fmt=auto&maxorilen2heic=2000000"}
+        data[10]={
+            title: "aLize",text: "一首燃曲，澤野弘之作之",
+            id: "1313052233",img: ""
+        }
+        data[11]={
+            title: "千本桜",text: "歌手：黒うさP / 初音ミク",
+            id: "26096272",img: ""
+        }
