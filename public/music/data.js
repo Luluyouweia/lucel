@@ -34,7 +34,7 @@
 			title: "オラリオン",
 			text:"点击播放",
 			mid:"https://luspecial.vercel.app/cloud/file/private/musicZjdcrts2-2.mp3",
-			img: "https://i0.hdslb.com/bfs/bangumi/34a46a3d1504d05febaa14d0b5174015649974df.jpg@524w_698h.webp"}
+			img: "https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/f0512967c9d1c9b68290c796c9d3ac103c3226c911738770299c7ea53a2e4324157e9771a7530d618d2e5d02b4bfa4f3?pictype=scale&from=30113&version=3.3.3.3&fname=34a46a3d1504d05febaa14d0b5174015649974df.jpg%40524w_698h.webp&size=750"}
 		data[7]={
 			title: "营地中心",
 			text:"Neateasy Games Background Music",
