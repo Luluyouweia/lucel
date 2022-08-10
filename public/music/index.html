@@ -393,10 +393,8 @@
 	const num=document.getElementsByClassName("init").length;//@play using;
 	//Devlopper Useing Function
 		var clearCookie=()=>{
-			var d = new Date();
-			d.setTime(d.getTime()+(-365*24*60*60*1000));
-			var expires = "expires="+d.toGMTString();
-			document.cookie = expires;
+            setCookie("_main","",-1);
+            setCookie("music","",-1);
 		}
 
 	//Pack Func 执行区域：
