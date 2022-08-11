@@ -275,6 +275,7 @@
 				obj.replace(getCookie("music"),newData);
 			}
 		}
+		return document.cookie;
 	}
 
 		function play(n){
@@ -326,7 +327,8 @@
 						break;
 					}
 				}
-			return thisId=i;MUSICID=data[i].d;
+			thisId=i;MUSICID=data[i].d;
+			return true;
 		}
 
 		for(let i=0;i<data.length;++i){
@@ -345,7 +347,7 @@
 
 				$("#ilike").className="fa fa-heart-o";
 				$("#ilike").style.color="#fff;"
-				return ;
+				return true;
 			}
 		}
 
