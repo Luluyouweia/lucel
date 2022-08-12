@@ -58,16 +58,16 @@
             id: "26096272",img: "https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/7ee2d65d34641da4d41517e9979276e589a3e03b782df16e464a5e2bf0b8da412c142880b7a490f67beda834ef447751?pictype=scale&from=30113&version=3.3.3.3&fname=Screenshot_20220806_222718_cn.wps.moffice_eng_edit_96068856515548.jpg&size=750"}
         data[12]={
             title: "Never Gonna Give You Up",text: "你被骗了，但是自愿。<br>维诺.理查德.汪苏泷",
-            id:"5221167",img:"https://njc-download.weiyun.com/ftn_handler/1d57ea3c9a3cf4908ac68b9a07455f5704ff1eff1c6deee93bcb74aa7d5494eef7b8efafe71e387ccd03395d0ba508c75b842798c00fe9a106dfe6c9b70a5181/NGGYU.jpg?fname=NGGYU.jpg&from=30113&version=3.3.3.3"}
+            id:"5221167",img:"https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/1104801e986ac4e54f0eb336cc7fa95e774ad70d1ff3dac8a3aefd119ec6aa9681fb519a368c93b9f1d2149679cdb76b?pictype=scale&from=30113&version=3.3.3.3&fname=NGGYU.jpg&size=750"}
         data[13]={
             title: "星天(Star Sky)",text:"常用战忽局BGM,燃起来了！",
             id: "31654478",img:"https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/7ee2d65d34641da4d41517e9979276e589a3e03b782df16e464a5e2bf0b8da412c142880b7a490f67beda834ef447751?pictype=scale&from=30113&version=3.3.3.3&fname=Screenshot_20220806_222718_cn.wps.moffice_eng_edit_96068856515548.jpg&size=750"}
         data[14]={
             title: "Astronomia",text:"emmmm,慎听",
-            id: "430114655",img:"https://cn.bing.com/images/search?q=%e9%bb%91%e4%ba%ba%e6%8a%ac%e6%a3%ba&id=72936BCE48F6A37AAD2F99B27806DBF40A14C413&FORM=IQFRBA&tsc=ImageHoverTitle"}
+            id: "430114655",img:"https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/d972e5420adff2d193af09a50066665b7df78241564afb10f3ae462b268b3bd2b547d8f191129de9e2b7b11dc9b35346?pictype=scale&from=30113&version=3.3.3.3&fname=HRTG.jpg&size=750"}
         data[15]={
             title:"",text:"平静的小曲，网友神评：“听着这音乐打代码，感觉我在拯救世界！！！”",
-            id:"2112355",img:"https://gzc-download.weiyun.com/ftn_handler/a044f433374fe0398b0e25c38dac068c43339db3388b6e68d9d4aa49ce638332bcc176252ee4829ec054bc62c5d570ea370e872a88461d27807a1850d4e0f953/DMKJ.jpg?fname=DMKJ.jpg&from=30113&version=3.3.3.3"}
+            id:"2112355",img:"https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/90c5f8a7a662afcf71306e72e4e18e9f8e07c5fce6f52c4718e2967764866651c65d6717089bfc9b96defcaf3ad934c9?pictype=scale&from=30113&version=3.3.3.3&fname=DMKJ.jpg&size=750"}
         data[16]={
             title:"苏维埃进行曲",text:"不知道该怎么描述",
             id:"5042951",img:"https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/7ee2d65d34641da4d41517e9979276e589a3e03b782df16e464a5e2bf0b8da412c142880b7a490f67beda834ef447751?pictype=scale&from=30113&version=3.3.3.3&fname=Screenshot_20220806_222718_cn.wps.moffice_eng_edit_96068856515548.jpg&size=750"}
@@ -76,5 +76,5 @@
             id:"521416693",img:"https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/7ee2d65d34641da4d41517e9979276e589a3e03b782df16e464a5e2bf0b8da412c142880b7a490f67beda834ef447751?pictype=scale&from=30113&version=3.3.3.3&fname=Screenshot_20220806_222718_cn.wps.moffice_eng_edit_96068856515548.jpg&size=750"}
         data[18]={
             title:"<h4 style='color:red'>MV</h4>白天不懂夜的黑",text:"嗯...这图片你敢直接看吗？！“年轻人不要太气盛”“不气盛叫年轻人吗”“是龙得盘着，是虎得卧着”“刘华强，我告诉你，你今天要是敢踏出这房门一步...”“痛快，我就喜欢你这脾气”[doge]",
-            source:"https://player.bilibili.com/player.html?aid=91073180&bvid=BV11j411f7ak&cid=155517433&page=1",img:"https://tjc-download.weiyun.com/ftn_handler/5a2800928144781f5b6f53598e4c6d998ad2965c9a68416461d758c71db93237964b7d682c8d41bf444ce3c9555ef6b6abaadaca144fba0517998d75024035bb/v2-b869d0b7668b2cb7f73c90bf252dede6_r.jpg?fname=v2-b869d0b7668b2cb7f73c90bf252dede6_r.jpg&from=30113&version=3.3.3.3"
+            source:"https://player.bilibili.com/player.html?aid=91073180&bvid=BV11j411f7ak&cid=155517433&page=1",img:"https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/ae9b8017098b60fff4639c2cb7206dcc7ab2772269afa6892afe13c629fde1e4eb7d4dc08d046406769805408b7e9229?pictype=scale&from=30113&version=3.3.3.3&fname=v2-b869d0b7668b2cb7f73c90bf252dede6_r.jpg&size=750"
         }
