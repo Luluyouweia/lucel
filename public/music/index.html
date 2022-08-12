@@ -379,19 +379,19 @@
 						break;
 					}
 				}
-			$("clearTexts").onclick=()=>'';
+			//$("clearTexts").onclick=()=>'';
 			thisId=i;
 			MUSICID=data[i].d;
 			return true;
 		}
 
-		var clearScreenTexts=()=>{
-			$("#playerBG").style.opacity="0";
-			$("#boardMusicTitle").style.opacity="0";
-			$("clearTexts").className="fa fa-mile-reply";
-			$("clearTexts").onclick=playerDisplay(thisId);
-			return true;
-		};
+		//var clearScreenTexts=()=>{
+		//	$("#playerBG").style.opacity="0";
+		//	$("#boardMusicTitle").style.opacity="0";
+		//	$("clearTexts").className="fa fa-mile-reply";
+		//	$("clearTexts").onclick=playerDisplay(thisId);
+		//	return true;
+		//};
 
 		//返回按钮 => 关荧幕
 		var back=(obj)=>{
