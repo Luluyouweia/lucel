@@ -226,6 +226,7 @@
 			var thisId;//当前点开页面的Id
 			var MUSICID;//This id;
 			var loopPlayValue=0;//@loop under
+            var CLEAR=0;
 
 			var user={
 				listened:0,add:0,settings:0,
@@ -364,8 +365,6 @@
 			$("#player").style.top=0;
 			$("#boardMusicTitle").innerHTML=data[i].title;
 			$("#playerInner").innerHTML="描述："+data[i].text;
-			$("#playerBG").style.opacity="0";
-			$("#boardMusicTitle").style.opacity="0";
 
 			var n=getCookie("music").split("&");
 				var len=n.length;
@@ -379,19 +378,26 @@
 						break;
 					}
 				}
-			//$("clearTexts").onclick=()=>'';
 			thisId=i;
 			MUSICID=data[i].d;
 			return true;
 		}
 
-		//var clearScreenTexts=()=>{
-		//	$("#playerBG").style.opacity="0";
-		//	$("#boardMusicTitle").style.opacity="0";
-		//	$("clearTexts").className="fa fa-mile-reply";
-		//	$("clearTexts").onclick=playerDisplay(thisId);
-		//	return true;
-		//};
+		var clearScreenTexts=()=>{
+			if(CLEAR==0){
+				$("#playerBG").style.opacity="0";
+				$("#boardMusicTitle").style.opacity="0";
+				$("clearTexts").className="fa fa-mile-reply";
+				CLEAR=1;
+				return true;
+			}else{
+				$("#playerBG").style.opacity="0";
+				$("#boardMusicTitle").style.opacity="0";
+				$("clearTexts").className="fa fa-minus";
+				CLEAR=0;
+				return false;
+			}
+		};
 
 		//返回按钮 => 关荧幕
 		var back=(obj)=>{
