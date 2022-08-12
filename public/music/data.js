@@ -75,20 +75,6 @@
             title:"So far away",text="网易云音乐电音榜单",
             id="521416693",img:""}
         data[18]={
-            title:"白天不懂夜的黑",text="“年轻人不要太气盛”“不气盛叫年轻人吗”“刘华强，我告诉你，你今天要是敢踏出这房门一步...”“痛快，我就喜欢你这脾气”[doge]",mid="https://www.bilibili.com/video/av91073180",img=""
-        }
-        data[19]={
-            title:"",text="",id="",img=""
-        }
-        data[20]={
-            title:"",text="",id="",img=""
-        }
-        data[21]={
-            title:"",text="",id="",img=""
-        }
-        data[22]={
-            title:"",text="",id="",img=""
-        }
-        data[23]={
-            title:"",text="",id="",img=""
+            title:"白天不懂夜的黑",text="“年轻人不要太气盛”“不气盛叫年轻人吗”“刘华强，我告诉你，你今天要是敢踏出这房门一步...”“痛快，我就喜欢你这脾气”[doge]",
+            mid="https://www.bilibili.com/video/av91073180",img=""
         }
