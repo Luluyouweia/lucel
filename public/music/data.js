@@ -67,14 +67,14 @@
             id: "430114655",img:"https://cn.bing.com/images/search?q=%e9%bb%91%e4%ba%ba%e6%8a%ac%e6%a3%ba&id=72936BCE48F6A37AAD2F99B27806DBF40A14C413&FORM=IQFRBA&tsc=ImageHoverTitle"}
         data[15]={
             title:"",text:"平静的小曲，网友神评：“听着这音乐打代码，感觉我在拯救世界！！！”",
-            id="2112355",img:""}
+            id:"2112355",img:""}
         data[16]={
-            title:"苏维埃进行曲",text="不知道该怎么描述",
-            id="5042951",img:""}
+            title:"苏维埃进行曲",text:"不知道该怎么描述",
+            id:"5042951",img:""}
         data[17]={
-            title:"So far away",text="网易云音乐电音榜单",
-            id="521416693",img:""}
+            title:"So far away",text:"网易云音乐电音榜单",
+            id:"521416693",img:""}
         data[18]={
-            title:"白天不懂夜的黑",text="“年轻人不要太气盛”“不气盛叫年轻人吗”“是龙得盘着，是虎得卧着”“刘华强，我告诉你，你今天要是敢踏出这房门一步...”“痛快，我就喜欢你这脾气”[doge]",
-            mid="https://www.bilibili.com/video/av91073180",img=""
+            title:"白天不懂夜的黑",text:"“年轻人不要太气盛”“不气盛叫年轻人吗”“是龙得盘着，是虎得卧着”“刘华强，我告诉你，你今天要是敢踏出这房门一步...”“痛快，我就喜欢你这脾气”[doge]",
+            mid:"https://www.bilibili.com/video/av91073180",img:""
         }
