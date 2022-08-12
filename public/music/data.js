@@ -76,5 +76,5 @@
             id:"521416693",img:""}
         data[18]={
             title:"白天不懂夜的黑",text:"“年轻人不要太气盛”“不气盛叫年轻人吗”“是龙得盘着，是虎得卧着”“刘华强，我告诉你，你今天要是敢踏出这房门一步...”“痛快，我就喜欢你这脾气”[doge]",
-            source:"<iframe src="https://player.bilibili.com/player.html?aid=91073180&bvid=BV11j411f7ak&cid=155517433&page=1",img:""
+            source:"https://player.bilibili.com/player.html?aid=91073180&bvid=BV11j411f7ak&cid=155517433&page=1",img:""
         }
