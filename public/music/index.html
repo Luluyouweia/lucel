@@ -211,6 +211,7 @@
 	<audio id="music" controls><source src="" type="audio/mp3"></source></audio>
 	<iframe id ="ifr" src="" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 	<br><br><br>
+    
 	<script src="https://luspecial.vercel.app/music/data.js"></script>
 	<script>
 	var $=(ele)=>{
@@ -345,7 +346,7 @@
 				}else{
                     $("#ifr").style.display="block";
                     $("#ifr").src=data[n].source;
-                    $("#music").pause;
+                    $("#music").pause();
                     return;
                 }
 			}
