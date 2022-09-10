@@ -84,9 +84,6 @@
             title:"耍把戏",text:"流行歌曲,阿禹ayy",id:"1942278883",img:"https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/7ee2d65d34641da4d41517e9979276e589a3e03b782df16e464a5e2bf0b8da412c142880b7a490f67beda834ef447751?pictype=scale&from=30113&version=3.3.3.3&fname=Screenshot_20220806_222718_cn.wps.moffice_eng_edit_96068856515548.jpg&size=750"
         }
         data[21]={
-            title:"His theme",text:"著名厂商传说之下",id:"39227633",img:""
-        }
-        data[21]={
             title:"疾如猛火",text:"燃起来了！",id:"1492283139",img:""
         }
      data[22]={
@@ -115,4 +112,7 @@
         }
         data[30]={
             title:"平凡的道路",text:"朴树",id:"500665346",img:""
+        }
+        data[31]={
+            title:"His theme",text:"著名厂商传说之下",id:"39227633",img:""
         }
