@@ -1,12 +1,12 @@
 	var data=new Array();//Data数据数组
 		data[0]={
 			title: "After Tomorrow",
-			text: "Neateasy Games",
+			text: "网易游戏背景音乐",
 			id: "1329466574",
 			img:"https://luspecial.vercel.app/background.jpg",
 			type:"游戏;精选;高级"}
 		data[1]={
-			title: "花与舞",
+			title: "花之舞",
 			text:"Flower Dance",
 			id:"552194857",
 			img: "https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Zmxvd2Vyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60"}
@@ -22,7 +22,7 @@
 			img: "https://t15.baidu.com/it/u=2558305100,3869169614&fm=220&app=103&size=f558,372&n=0&f=JPEG&fmt=auto&maxorilen2heic=2000000"}
 		data[4]={
 			title: "Tennessee",
-			text:"点击播放",
+			text:"点击播放，源自纪录影片《珍珠港》",
 			id:"568888000",
 			img: "https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/7ee2d65d34641da4d41517e9979276e589a3e03b782df16e464a5e2bf0b8da412c142880b7a490f67beda834ef447751?pictype=scale&from=30113&version=3.3.3.3&fname=Screenshot_20220806_222718_cn.wps.moffice_eng_edit_96068856515548.jpg&size=750"}
 		data[5]={
@@ -37,12 +37,12 @@
 			img: "https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/f0512967c9d1c9b68290c796c9d3ac103c3226c911738770299c7ea53a2e4324157e9771a7530d618d2e5d02b4bfa4f3?pictype=scale&from=30113&version=3.3.3.3&fname=34a46a3d1504d05febaa14d0b5174015649974df.jpg%40524w_698h.webp&size=750"}
 		data[7]={
 			title: "营地中心",
-			text:"Neateasy Games Background Music",
+			text:"网易游戏背景音乐",
 			id:"1329466573",
 			img: "https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/ef19750eee8e8d4f50e841cc390ccd02fcab5bdf30495623655b4b7ecdcd945b45f6eaa770cb5717d4f956801e38963a?pictype=scale&from=30113&version=3.3.3.3&fname=R-C.jpg&size=750"}
 		data[8]={
 			title: "晨曦酒庄",
-			text:"Mihoyo Games Background Music",
+			text:"米哈游游戏背景音乐",
 			id:"1455706951",
 			img: "https://webstatic.mihoyo.com/upload/contentweb/2022/07/24/3c16216d6e7f1dc788ba783d3a793d9e_8358466801763713902.jpg"}
 		data[9]={
@@ -63,7 +63,7 @@
             title: "星天(Star Sky)",text:"常用战忽局BGM,燃起来了！",
             id: "31654478",img:"https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/7ee2d65d34641da4d41517e9979276e589a3e03b782df16e464a5e2bf0b8da412c142880b7a490f67beda834ef447751?pictype=scale&from=30113&version=3.3.3.3&fname=Screenshot_20220806_222718_cn.wps.moffice_eng_edit_96068856515548.jpg&size=750"}
         data[14]={
-            title: "Astronomia",text:"emmmm,慎听",
+            title: "Astronomia",text:"黑人抬棺主题交响乐",
             id: "430114655",img:"https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/d972e5420adff2d193af09a50066665b7df78241564afb10f3ae462b268b3bd2b547d8f191129de9e2b7b11dc9b35346?pictype=scale&from=30113&version=3.3.3.3&fname=HRTG.jpg&size=750"}
         data[15]={
             title:"",text:"平静的小曲，网友神评：“听着这音乐打代码，感觉我在拯救世界！！！”",
@@ -82,4 +82,37 @@
         }
         data[20]={
             title:"耍把戏",text:"流行歌曲,阿禹ayy",id:"1942278883",img:"https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/7ee2d65d34641da4d41517e9979276e589a3e03b782df16e464a5e2bf0b8da412c142880b7a490f67beda834ef447751?pictype=scale&from=30113&version=3.3.3.3&fname=Screenshot_20220806_222718_cn.wps.moffice_eng_edit_96068856515548.jpg&size=750"
+        }
+        data[21]={
+            title:"His theme",text:"著名厂商传说之下",id:"39227633",img:""
+        }
+        data[21]={
+            title:"疾如猛火",text:"燃起来了！",id:"1492283139",img:""
+        }
+     data[22]={
+            title:"寒光裂涛",text:"改编二创音乐",id:"1938344204",img:""
+        }
+        data[23]={
+            title:"Free Lucky",text:"纯音乐",id:"1392600538",img:""
+        }
+        data[24]={
+            title:"Time to pretend",text:"让我们再次伟大哈哈哈！！！",id:"1899726376",img:""
+        }
+        data[25]={
+            title:"带我去找夜生活",text:"告五人作曲",id:"1410647903",img:""
+        }
+        data[26]={
+            title:"飞向遥远的天空",text:"遠い空へ【ヨスガノソラ メインテーマ】",id:"411755222",img:""
+        }
+        data[27]={
+            title:"尘世闲游",text:"悠然，悠然，不过，？？？",id:"1817410059",img:""
+        }
+        data[28]={
+            title:"环太平洋",text:"猛燃",id:"26625301",img:""
+        }
+        data[29]={
+            title:"永远不会放弃您(Never Gonna Give You Up 豪华版)",text:"您要被骗了！",mid:"https://player.bilibili.com/player.html?aid=601888108&bvid=BV1vB4y1574y&cid=802251467&page=1",img:""
+        }
+        data[30]={
+            title:"平凡的道路",text:"朴树",id:"500665346",img:""
         }
