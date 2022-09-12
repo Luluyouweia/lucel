@@ -165,8 +165,15 @@
         border: none;display: none;
         z-index: 9;
     }
-
-
+    .load-more-music{
+        background: rgb(111,111,111);color: #414141;padding: 36px;text-align: center;width: 100%;
+    }
+    .fa fa-heart-o{
+        color: #fff;transition: 0.6s;
+    }
+    .fa fa-heart{
+        color: red;background: red;
+    }
 	</style>
 	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">		
 </head>	
@@ -191,6 +198,9 @@
 	
 	<div id="page" ></div>
 	
+    <!--For iframe back:-->
+    <button class="back" id="returnIfr" style="z-index: 19;display: block;top: 1.2vh;right: 2vw;" onclick="back('ifr')">╳</button>
+
 	<section id="player">
 		<div id="boardMusicTitle">曲目</div>
 		<button class="back" style="top: 1.2vh;right: 5vw;" onclick="back('playerScreen')">╳</button>
@@ -220,13 +230,19 @@
 	}
 	//容器构造器
 	for(let i=0;i<data.length;++i){
-			//var type=data[i].type.split(";");var len=type.length;console.log(len)
-			data[i].d=i;//LUCEL下的ID
+		//var type=data[i].type.split(";");var len=type.length;console.log(len)
+		    data[i].d=i;//LUCEL下的ID
 			var bg="<div class='content' onclick='play("+i+")' style='background-image:url("+data[i].img+")'><div class='init'>";
 			var title="<h3>"+data[i].title+"</h3>";
 			var text="<div class='text244'>"+data[i].text+"</div></div>";
 			$("#page").innerHTML+=bg+title+text;
+            if(data[i].img='')data[i].img="https://lucel.pages.dev/background.jpg";//content background link
+            if(i==9){
+                $("#page").innerHTML+="<div class='load-more-music' onclick='loadAll()'>加载更多</div>";
+                break;
+            }
 	}
+    var loadAll=()=>{for(let i=10;i<data.length;++i){data[i].d=i;var bg="<div class='content' onclick='play("+i+")' style='background-image:url("+data[i].img+")'><div class='init'>";var title="<h3>"+data[i].title+"</h3>";var text="<div class='text244'>";+data[i].text+"</div></div>";$("#page").innerHTML+=bg+title+text;if(data[i].img='')data[i].img="https://lucel.pages.dev/background.jpg";}}
 
 		//小接口：
 			var locateId;//当前正在播放的音乐ID
@@ -236,12 +252,6 @@
 			var CLEAR=0;
 
 			var user={
-				listened:0,add:0,settings:0,
-				func:{
-					addIlike:()=>{
-						return;	
-					}
-				}
 			}
 		//end
 		
@@ -310,7 +320,6 @@
 				var newData = getCookie("music")+value+"&";
 				setCookie("music",newData,5);
 				$("#ilike").style.className="fa fa-heart";
-				$("#ilike").style.color="red";
 				return  getCookie("music");
 			}
 		}
@@ -334,8 +343,6 @@
 	if(!getCookie("loopModel")==''){loopPlayValue=getCookie("loopModel");loopPlay();loopPlay();};
 
 		function play(n){
-				//Debuger:
-				console.log("Cookie",document.cookie);
 			if(($("#music").src)!=("https://music.163.com/song/media/outer/url?id="+data[n].id))
 			{
 				listen();
@@ -347,6 +354,9 @@
                     $("#ifr").style.display="block";
                     $("#ifr").src=data[n].source;
                     $("#music").pause();
+                    playerDisplay(n);
+			        $("#listen").style.visibility="hidden";
+                    $("#returnIfr").style.display="block";
                     return;
                 }
 			}
@@ -420,7 +430,10 @@
 				$("#ilike").className="fa fa-heart-o";
 				$("#ilike").style.color="#fff";
 				return true;
-			}
+			}else if(obj=="ifr"){
+                $("#returnIfr").display="none";
+                return back("playerScreen");
+            }
 		}
 
 		$("#listen").onclick=()=>{
