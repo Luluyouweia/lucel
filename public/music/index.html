@@ -232,7 +232,7 @@
 	for(let i=0;i<data.length;++i){
 		//var type=data[i].type.split(";");var len=type.length;console.log(len)
 		    data[i].d=i;//LUCEL下的ID
-            if(data[i].img=''){data[i].img="https://lucel.pages.dev/background.jpg";}//content background link
+            if(data[i].img==''){data[i].img="https://lucel.pages.dev/background.jpg";}//content background link
 			var bg="<div class='content' onclick='play("+i+")' style='background-image:url("+data[i].img+")'><div class='init'>";
 			var title="<h3>"+data[i].title+"</h3>";
 			var text="<div class='text244'>"+data[i].text+"</div></div>";
@@ -245,7 +245,7 @@
     var loadAll=()=>{
         for(let i=10;i<data.length;++i){
             data[i].d=i;
-        if(data[i].img=''){data[i].img="https://lucel.pages.dev/background.jpg";}
+        if(data[i].img==''){data[i].img="https://lucel.pages.dev/background.jpg";}
             var bg="<div class='content' onclick='play("+i+")' style='background-image:url("+data[i].img+")'><div class='init'>";
             var title="<h3>"+data[i].title+"</h3>";
             var text="<div class='text244'>"+data[i].text+"</div></div>";
