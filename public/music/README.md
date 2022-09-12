@@ -4,12 +4,12 @@
 
  _ :cn: 来自中国_ 
 
-[点击进入网站:Lucel Music 鹿客音乐](https://luspecial.vercel.app/music)
+[点击进入网站:Lucel Music 鹿客音乐](https://lucel.pages.dev/music/)
 
 ### 关于
 1. 本网页不用于商业用途
 2. 本网页仅用于演示
-3. 网站由[Vercel](https://www.vercel.com)托管
+3. 网站由[Cloudflare](https://www.cloudflare.com)托管
 
  **格言** 
 > 追求美好，碌碌有为。
