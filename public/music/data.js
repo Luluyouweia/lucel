@@ -34,7 +34,7 @@
 			title: "オラリオン",
 			text:"点击播放",
 			mid:"https://lucel.pages.dev/cloud/file/private/musicZjdcrts2-2.mp3",
-			img: "https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/f0512967c9d1c9b68290c796c9d3ac103c3226c911738770299c7ea53a2e4324157e9771a7530d618d2e5d02b4bfa4f3?pictype=scale&from=30113&version=3.3.3.3&fname=34a46a3d1504d05febaa14d0b5174015649974df.jpg%40524w_698h.webp&size=750"}
+			img: ""}
 		data[7]={
 			title: "营地中心",
 			text:"网易游戏背景音乐",
@@ -44,7 +44,7 @@
 			title: "晨曦酒庄",
 			text:"米哈游游戏背景音乐",
 			id:"1455706951",
-			img: "https://webstatic.mihoyo.com/upload/contentweb/2022/07/24/3c16216d6e7f1dc788ba783d3a793d9e_8358466801763713902.jpg"}
+			img: ""}
 		data[9]={
 			title: "钢铁洪流进行曲",
 			text:"国庆70周年庆典背景音乐之一,著名音乐",
@@ -55,7 +55,7 @@
             id: "1313052233",img: "https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/7ee2d65d34641da4d41517e9979276e589a3e03b782df16e464a5e2bf0b8da412c142880b7a490f67beda834ef447751?pictype=scale&from=30113&version=3.3.3.3&fname=Screenshot_20220806_222718_cn.wps.moffice_eng_edit_96068856515548.jpg&size=750"}
         data[11]={
             title: "千本桜",text: "歌手：黒うさP / 初音ミク",
-            id: "26096272",img: "https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/7ee2d65d34641da4d41517e9979276e589a3e03b782df16e464a5e2bf0b8da412c142880b7a490f67beda834ef447751?pictype=scale&from=30113&version=3.3.3.3&fname=Screenshot_20220806_222718_cn.wps.moffice_eng_edit_96068856515548.jpg&size=750"}
+            id: "26096272",img: "https://images.unsplash.com/photo-1522383225653-ed111181a951?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80"}
         data[12]={
             title: "Never Gonna Give You Up",text: "你被骗了，但是自愿。<br>维诺.理查德.汪苏泷",
             id:"5221167",img:"https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/1104801e986ac4e54f0eb336cc7fa95e774ad70d1ff3dac8a3aefd119ec6aa9681fb519a368c93b9f1d2149679cdb76b?pictype=scale&from=30113&version=3.3.3.3&fname=NGGYU.jpg&size=750"}
@@ -87,7 +87,7 @@
             title:"疾如猛火",text:"燃起来了！",id:"1492283139",img:"https://uploadstatic.mihoyo.com/contentweb/20200319/2020031921552395638.jpg"
         }
      data[22]={
-            title:"寒光裂涛",text:"二创音乐",id:"1938344204",img:""
+            title:"寒光裂涛",text:"二创音乐",id:"1938344204",img:"https://i0.hdslb.com/bfs/article/6daa681c51d61f01c97c3cdd584f323b86e98736.jpg@942w_531h_progressive.webp"
         }
         data[23]={
             title:"Free Lucky",text:"纯音乐",id:"1392600538",img:""
@@ -96,10 +96,10 @@
             title:"Time to pretend",text:"让我们再次伟大哈哈哈！！！",id:"1899726376",img:""
         }
         data[25]={
-            title:"带我去找夜生活",text:"告五人作曲",id:"1410647903",img:""
+            title:"带我去找夜生活",text:"告五人作曲",id:"1410647903",img:"https://images.unsplash.com/photo-1515981590392-502e83bbf224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1100&q=80"
         }
         data[26]={
-            title:"飞向遥远的天空",text:"遠い空へ【ヨスガノソラ メインテーマ】",id:"411755222",img:""
+            title:"飞向遥远的天空",text:"遠い空へ【ヨスガノソラ メインテーマ】",id:"411755222",img:"https://i0.hdslb.com/bfs/article/26c96fb55dd9fde6859d1e7a45e6499fc24d1b08.jpg@942w_590h_progressive.webp"
         }
         data[27]={
             title:"尘世闲游",text:"悠然，悠然，不过，？？？",id:"1817410059",img:""
@@ -108,11 +108,11 @@
             title:"环太平洋",text:"猛燃",id:"26625301",img:""
         }
         data[29]={
-            title:"<h4 style='color:red'>MV</h4>永远不会放弃您(Never Gonna Give You Up 豪华版)",text:"您要被骗了！",source:"https://player.bilibili.com/player.html?aid=601888108&bvid=BV1vB4y1574y&cid=802251467&page=1",img:""
+            title:"<h4 style='color:red'>MV</h4>永远不会放弃您(Never Gonna Give You Up 豪华版)",text:"您要被骗了！",source:"https://player.bilibili.com/player.html?aid=601888108&bvid=BV1vB4y1574y&cid=802251467&page=1",img:"https://www.concierto.cl/wp-content/uploads/2021/02/Rick-Astley.jpg"
         }
         data[30]={
             title:"平凡的道路",text:"朴树",id:"500665346",img:""
         }
         data[31]={
-            title:"His theme",text:"著名厂商传说之下",id:"39227633",img:""
+            title:"His theme",text:"音乐源于传说之下",id:"39227633",img:""
         }
