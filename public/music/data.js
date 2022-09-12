@@ -87,7 +87,7 @@
             title:"疾如猛火",text:"燃起来了！",id:"1492283139",img:"https://uploadstatic.mihoyo.com/contentweb/20200319/2020031921552395638.jpg"
         }
      data[22]={
-            title:"寒光裂涛",text:"二创音乐",id:"1938344204",img:"https://i0.hdslb.com/bfs/article/6daa681c51d61f01c97c3cdd584f323b86e98736.jpg@942w_531h_progressive.webp"
+            title:"寒光裂涛",text:"二创音乐",id:"1938344204",img:""
         }
         data[23]={
             title:"Free Lucky",text:"纯音乐",id:"1392600538",img:""
@@ -99,7 +99,7 @@
             title:"带我去找夜生活",text:"告五人作曲",id:"1410647903",img:"https://images.unsplash.com/photo-1515981590392-502e83bbf224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1100&q=80"
         }
         data[26]={
-            title:"飞向遥远的天空",text:"遠い空へ【ヨスガノソラ メインテーマ】",id:"411755222",img:"https://i0.hdslb.com/bfs/article/26c96fb55dd9fde6859d1e7a45e6499fc24d1b08.jpg@942w_590h_progressive.webp"
+            title:"飞向遥远的天空",text:"遠い空へ【ヨスガノソラ メインテーマ】",id:"411755222",img:""
         }
         data[27]={
             title:"尘世闲游",text:"悠然，悠然，不过，？？？",id:"1817410059",img:""
