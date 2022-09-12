@@ -246,7 +246,8 @@
         for(let i=10;i<data.length;++i){
             data[i].d=i;
             var bg="<div class='content' onclick='play("+i+")' style='background-image:url("+data[i].img+")'><div class='init'>";
-            var title="<h3>"+data[i].title+"</h3>";var text="<div class='text244'>";+data[i].text+"</div></div>";
+            var title="<h3>"+data[i].title+"</h3>";
+            var text="<div class='text244'>"+data[i].text+"</div></div>";
             $("#page").innerHTML+=bg+title+text;
             
             if(data[i].img='')data[i].img="https://lucel.pages.dev/background.jpg";
