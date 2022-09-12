@@ -166,7 +166,7 @@
         z-index: 9;
     }
     .load-more-music{
-        background: rgb(111,111,111);color: #414141;padding: 36px;text-align: center;width: 100%;
+        background: rgb(222,222,222);color: #414141;padding: 16px;text-align: center;width: 100%;
     }
     .fa fa-heart-o{
         color: #fff;transition: 0.6s;
@@ -199,7 +199,7 @@
 	<div id="page" ></div>
 	
     <!--For iframe back:-->
-    <button class="back" id="returnIfr" style="z-index: 19;display: block;top: 1.2vh;right: 2vw;" onclick="back('ifr')">╳</button>
+    <button class="back" id="returnIfr" style="z-index: 19;display: none;top: 1.2vh;right: 2vw;position: fixed;" onclick="back('ifr')">╳</button>
 
 	<section id="player">
 		<div id="boardMusicTitle">曲目</div>
@@ -242,7 +242,16 @@
                 break;
             }
 	}
-    var loadAll=()=>{for(let i=10;i<data.length;++i){data[i].d=i;var bg="<div class='content' onclick='play("+i+")' style='background-image:url("+data[i].img+")'><div class='init'>";var title="<h3>"+data[i].title+"</h3>";var text="<div class='text244'>";+data[i].text+"</div></div>";$("#page").innerHTML+=bg+title+text;if(data[i].img='')data[i].img="https://lucel.pages.dev/background.jpg";}}
+    var loadAll=()=>{
+        for(let i=10;i<data.length;++i){
+            data[i].d=i;
+            var bg="<div class='content' onclick='play("+i+")' style='background-image:url("+data[i].img+")'><div class='init'>";
+            var title="<h3>"+data[i].title+"</h3>";var text="<div class='text244'>";+data[i].text+"</div></div>";
+            $("#page").innerHTML+=bg+title+text;
+            
+            if(data[i].img='')data[i].img="https://lucel.pages.dev/background.jpg";
+        }
+    }
 
 		//小接口：
 			var locateId;//当前正在播放的音乐ID
@@ -394,7 +403,6 @@
 				for(let v=0;v<len;++v){
 					if(n[v]==data[i].d){
 						$("#ilike").className="fa fa-heart";
-						$("#ilike").style.color="red";
 						$("#playerBG").style.opacity="1";
 						$("#boardMusicTitle").style.opacity="1";
 						break;
@@ -432,6 +440,7 @@
 				return true;
 			}else if(obj=="ifr"){
                 $("#returnIfr").display="none";
+                $("#ifr").style.display="none";
                 return back("playerScreen");
             }
 		}
