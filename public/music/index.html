@@ -232,11 +232,11 @@
 	for(let i=0;i<data.length;++i){
 		//var type=data[i].type.split(";");var len=type.length;console.log(len)
 		    data[i].d=i;//LUCEL下的ID
+            if(data[i].img='')data[i].img="https://lucel.pages.dev/background.jpg";//content background link
 			var bg="<div class='content' onclick='play("+i+")' style='background-image:url("+data[i].img+")'><div class='init'>";
 			var title="<h3>"+data[i].title+"</h3>";
 			var text="<div class='text244'>"+data[i].text+"</div></div>";
 			$("#page").innerHTML+=bg+title+text;
-            if(data[i].img='')data[i].img="https://lucel.pages.dev/background.jpg";//content background link
             if(i==9){
                 $("#page").innerHTML+="<div class='load-more-music' onclick='loadAll()'>加载更多</div>";
                 break;
@@ -245,12 +245,11 @@
     var loadAll=()=>{
         for(let i=10;i<data.length;++i){
             data[i].d=i;
+        if(data[i].img=''){data[i].img="https://lucel.pages.dev/background.jpg";}
             var bg="<div class='content' onclick='play("+i+")' style='background-image:url("+data[i].img+")'><div class='init'>";
             var title="<h3>"+data[i].title+"</h3>";
             var text="<div class='text244'>"+data[i].text+"</div></div>";
             $("#page").innerHTML+=bg+title+text;
-            
-            if(data[i].img='')data[i].img="https://lucel.pages.dev/background.jpg";
         }
     }
 
@@ -373,11 +372,13 @@
 			$("#music").play();
 			playerDisplay(n);
 			$("#listen").style.visibility="hidden";//隐藏音乐浮动图标
-			for(let i=0;i<num;++i){
+			
+            for(let i=0;i<num;++i){
 				document.getElementsByClassName("init")[i].style="rgb(255,255,255,0.5);top: 0;"
 			}
-			document.getElementsByClassName("init")[n].style="background: rgb(255,255,255,0.7);top: 70%;"
-			return locateId=n;
+            document.getElementsByClassName("init")[n].style="background: rgb(255,255,255,0.7);top: 70%;"
+			
+            return locateId=n;
 		}
 		var listen=()=>{
 			var t,f;
@@ -500,7 +501,7 @@
 	//Pack Func 执行区域：
 	checkCookie();
 	setTimeout(()=>{
-		if(getCookie("_main")){newMessage("Cookie已保存至本地，请珍惜您的数据！")}
+		if(getCookie("_main")){newMessage("Cookie已保存至本地")}
 	},2000);
 	</script>
 </body>
