@@ -1,7 +1,7 @@
 	var data=new Array();//Data数据数组
 		data[0]={
 			title: "After Tomorrow",
-			text: "网易游戏背景音乐",
+			text: "网易游戏特辑音乐",
 			id: "1329466574",
 			img:"https://luspecial.vercel.app/background.jpg",
 			type:"游戏;精选;高级"}
