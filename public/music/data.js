@@ -3,7 +3,7 @@
 			title: "After Tomorrow",
 			text: "网易游戏特辑音乐",
 			id: "1329466574",
-			img:"https://luspecial.vercel.app/background.jpg",
+			img:"https://lucel.pages.dev/background.jpg",
 			type:"游戏;精选;高级"}
 		data[1]={
 			title: "花之舞",
