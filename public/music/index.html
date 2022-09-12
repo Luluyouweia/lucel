@@ -3,7 +3,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<meta charset="utf-8">
-	<title>鹿鹿音乐</title>
+	<title>鹿客音乐</title>
 	<style>
 	*{
 		margin: 0;padding: 0;
@@ -232,7 +232,7 @@
 	for(let i=0;i<data.length;++i){
 		//var type=data[i].type.split(";");var len=type.length;console.log(len)
 		    data[i].d=i;//LUCEL下的ID
-            if(data[i].img='')data[i].img="https://lucel.pages.dev/background.jpg";//content background link
+            if(data[i].img=''){data[i].img="https://lucel.pages.dev/background.jpg";}//content background link
 			var bg="<div class='content' onclick='play("+i+")' style='background-image:url("+data[i].img+")'><div class='init'>";
 			var title="<h3>"+data[i].title+"</h3>";
 			var text="<div class='text244'>"+data[i].text+"</div></div>";
