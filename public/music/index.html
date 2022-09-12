@@ -169,11 +169,11 @@
     .load-more-music{
         background: rgb(222,222,222);color: #414141;padding: 16px;text-align: center;width: 100%;
     }
-    .fa fa-heart-o{
+    .fa-heart-o{
         color: #fff !important;
         transition: 0.6s;
     }
-    .fa fa-heart{
+    .fa-heart{
         color: red !important;
         background: red !important;
     }
@@ -269,7 +269,6 @@
 		//end
 		
 		//初始化；
-			$("#ilike").style.color="#fff";//程序依托Bug而执行，别改就是了
 			//data:
 			var listen;
 		//end
@@ -442,7 +441,6 @@
 				$("#listen").style.visibility="visible";
 
 				$("#ilike").className="fa fa-heart-o";
-				$("#ilike").style.color="#fff";
 				return true;
 			}else if(obj=="ifr"){
                 $("#returnIfr").style.display="none";
