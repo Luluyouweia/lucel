@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Version 1.2.0.9121258 -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<meta charset="utf-8">
 	<title>鹿客音乐</title>
@@ -169,10 +170,12 @@
         background: rgb(222,222,222);color: #414141;padding: 16px;text-align: center;width: 100%;
     }
     .fa fa-heart-o{
-        color: #fff;transition: 0.6s;
+        color: #fff;!important
+        transition: 0.6s;
     }
     .fa fa-heart{
-        color: red;background: red;
+        color: red;!important
+        background: red;!important
     }
 	</style>
 	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">		
@@ -237,13 +240,14 @@
 			var title="<h3>"+data[i].title+"</h3>";
 			var text="<div class='text244'>"+data[i].text+"</div></div>";
 			$("#page").innerHTML+=bg+title+text;
-            if(i==9){
+            if(i==15){
                 $("#page").innerHTML+="<div class='load-more-music' onclick='loadAll()'>加载更多</div>";
                 break;
             }
 	}
     var loadAll=()=>{
-        for(let i=10;i<data.length;++i){
+        $("#returnIfr").style.display="none";
+        for(let i=16;i<data.length;++i){
             data[i].d=i;
         if(data[i].img==''){data[i].img="https://lucel.pages.dev/background.jpg";}
             var bg="<div class='content' onclick='play("+i+")' style='background-image:url("+data[i].img+")'><div class='init'>";
@@ -374,9 +378,9 @@
 			$("#listen").style.visibility="hidden";//隐藏音乐浮动图标
 			
             for(let i=0;i<num;++i){
-				document.getElementsByClassName("init")[i].style="rgb(255,255,255,0.5);top: 0;"
+				document.getElementsByClassName("init")[i].style="rgb(255,255,255,0.5);top: 0;";
 			}
-            document.getElementsByClassName("init")[n].style="background: rgb(255,255,255,0.7);top: 70%;"
+            document.getElementsByClassName("init")[n].style="background: rgb(255,255,255,0.7);top: 70%;";
 			
             return locateId=n;
 		}
@@ -441,7 +445,7 @@
 				$("#ilike").style.color="#fff";
 				return true;
 			}else if(obj=="ifr"){
-                $("#returnIfr").display="none";
+                $("#returnIfr").style.display="none";
                 $("#ifr").style.display="none";
                 return back("playerScreen");
             }
