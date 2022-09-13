@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style type="text/css">
+		*{
+			margin: 0;padding: 0;box-sizing: border-box;font-weight: 300;
+		}
+		html,body{height: 100%;background-image: linear-gradient(to bottom,#08f,#9cf,#eee,#fff);}
+		#pwd{
+			width: 88%;left: 0;right: 0;margin: auto;padding: 10px;outline: none;border: none;border-bottom: 1px solid #eee;
+		}
+		.content-bar{
+			background-color: #fff;border: 1px solid #eee;border-radius: 16px;padding: 20px;width: 90%;height: auto;
+			left: 0;right: 0;top: 50px;margin: auto;position: absolute;
+			height: 300px;
+		}
+		.content-bar:hover{
+			box-shadow: 3px 4px 4px rgb(0,0,0,0.3);
+		}
+		text{
+			font-size: 20px;text-align: center;display: block;
+		}
+		.space-content{
+			justify-content: space-around;display: flex;
+		}
+		#pwdsubmit{
+			padding: 12px 30px;border: 1px solid #000;transition: 0.5s;outline: none;color: #fff;background: #000;margin: 15px;
+		}
+		#pwdsubmit:hover{
+			background: #fff;color: #000;padding: 15px 36px;
+		}
+		footer{
+			display: block;position: fixed;top: 92vh;font-size: 10px;width: 100vw;padding: 8px;text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="content-bar">
+	<h2 style="text-weight: 600;font-size: 30px;text-align:center;margin: 10px;">跳转</h2>
+		<text>请输入激活码以跳转到指定网页</text>
+		<div class="space-content"><input id="pwd" type="password"></input></div>
+		<div id="result"></div>
+		<div class="space-content"><input id="pwdsubmit" type="submit" value="验证" onclick="target()"></input></div>
+	</div>
+	<footer>Lucel鹿客</footer>
+	<script>
+	const pwd=123456;
+	var target=()=>{
+		if(document.getElementById("pwd").value==pwd)
+		{
+			window.open("https://lucel.pages.dev/music/");
+			document.getElementById("result").innerHTML="<h5 style='color: green;margin-left: 36px;'>正在跳转至 https:\/\/lucel.pages.dev/music/ </h5>"
+			return true;
+		}
+		document.getElementById("result").innerHTML="<h5 style='color: red;margin-left: 36px;'>密钥错误</h5>";
+		return false;
+	}
+	</script>
+</body>
+</html>
+
+    
