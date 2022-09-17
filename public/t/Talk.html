@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+	*{
+		margin: 0;padding: 0;border-sizing: border-box;font-weight: 300;
+	}
+	html,body{
+		height: 100%;background: #eee;
+	}
+	#header{
+		top: 0;text-align: center;padding: 12px;width: 100%;background-image: linear-gradient(to right,#08f,#9cf);color: #fff;position: fixed;font-size: 15px;
+	}
+	#main{
+		padding: 8px;background: #eee;
+	}
+	#input{
+		background: #fff;width: 100%;padding: 6px 12px;position: fixed;bottom: 0;display: block;
+	}
+	#inputed{
+		display: inline-block;border: none;outline: none;border-radius: 8px;height: 30px;width: 82%;padding: 5px 2px;background: rgb(244,244,244);
+	}
+	#post{
+		border: none;outline: none;border-radius: 18px;padding: 10px 16px;color: #fff;background: #08f;margin: 0 5px;
+	}
+	.userTalkName{
+		color: rgb(123,123,123);font-size: 10px;
+	}
+	.msg-type0{
+		border-radius: 8px;padding: 5px 6px;background: #fff;color: #000;max-width: 78%;font-size: 16px;
+	}
+	.userSelfTalkName{
+		color: rgb(123,123,123);font-size: 10px;float: right;
+	}
+	.msg-self-type0{
+		float: right;border-radius: 8px;padding: 5px 6px;background: #08f;color: #fff;max-width: 78%;font-size: 16px;
+	}
+	
+	.vpanel{
+		height: 18px;width: 80%;padding: 2px;
+	}
+
+	</style>
+	<script src="https://unpkg.com/valine/dist/Valine.min.js"></script>
+</head>
+<body>
+	<section id="header">协作团队</section>
+	<div style="height: 50px;width: 100px"></div>
+	<section id="main">
+	
+	</section>
+	<section id="input">
+		<div id="vcomments"></div>
+	</section>
+	<div style="height: 60px;width: 100%"></div>
+	<script>
+	new Valine({ 
+		el: '#input', 
+		appId: '52oHnynz43jxLPAeoYDsgIHS-MdYXbMMI', 
+		appKey: 'zAjfoWbpGqzWA5CpA2zFKHk4',
+		placeholder:"请注意发言哦"
+	}) 
+	</script>
+<script>
+function s(){
+	var x=document.getElementById("input").innerHTML.split(">");
+	for(let a=0;a<x.length;++a){
+		console.log(x[a]+">")
+	}	
+}
+s()
+	var api={
+		teamName:''
+	}
+	var user={
+		name:'逯跃翔'
+	}
+	var $id=(e)=>{
+		return document.getElementById(e);
+	}
+	
+	document.getElementsByName("nick")[0].style.display="none";
+	document.getElementsByName("mail")[0].style.display="none";
+	document.getElementsByName("link")[0].style.display="none";
+	document.getElementById("veditor").style="height: 30px;width: 80%;padding: 0;";//textarea
+	
+	var postMessage=(user,msg)=>{
+		//接入数据库:暂时忽略--无经费
+		displayMessage(user,msg);
+		$id("inputed").value="";
+		return true;
+	}
+	var displayMessage=(user,msg)=>{
+		if(user==window.user.name){
+			$id("main").innerHTML+="<div class='userSelfTalkName'>"+user+"</div><br><div class='msg-self-type0'>"+msg+"</div><br><br>";
+			return;
+		}
+		$id("main").innerHTML+="<div class='userTalkName'>"+user+"</div><div class='msg-type0'>"+msg+"</div>";
+	}
+</script>
+</body>
+</html>
+
+    
+    
