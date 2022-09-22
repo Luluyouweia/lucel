@@ -43,7 +43,7 @@
 		data[8]={
 			title: "狮尾之舞",
 			text:"米哈游游戏背景音乐",
-			id:"1976116336",
+			id:"1981803400",
 			img: "https://webstatic.mihoyo.com/upload/contentweb/2022/07/24/3c16216d6e7f1dc788ba783d3a793d9e_8358466801763713902.jpg"}
 		data[9]={
 			title: "钢铁洪流进行曲",
